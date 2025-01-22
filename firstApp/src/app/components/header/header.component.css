@@ -1,0 +1,9 @@
+header{
+    display: flex;
+    padding-inline: 16px;
+    padding-block: 8px;
+    background-color: blanchedalmond;
+    color: blue;
+    align-items: center;
+    justify-items: space-between;
+}
