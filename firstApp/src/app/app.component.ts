@@ -9,11 +9,16 @@ import { HeaderComponent } from './components/header/header.component';
   imports: [RouterOutlet,HomeComponent,HeaderComponent],
   template:`
     <app-header/>
-   <main> <app-home/></main>
+   <main>
+     <app-home/>
+     <router-outlet></router-outlet> <!-- Added RouterOutlet here -->
+
+    </main>
   `,
   styleUrl: './app.component.css'
 
 })
+
 export class AppComponent {
   title = 'firstApp';
 }
