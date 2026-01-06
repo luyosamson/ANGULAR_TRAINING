@@ -9,6 +9,8 @@ import { CounterComponent } from './counter/counter.component';
   imports:[CounterComponent]
 })
 export class AppComponent {
+
+  
   lastCount: number = 10;
 
   onCountChanged(newCount: number) {
