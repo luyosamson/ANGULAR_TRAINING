@@ -1,0 +1,16 @@
+<div class="counter-container">
+    <h2>Counter</h2>
+  
+    <p class="count-display" [class.negative]="count < 0">
+      {{ count }}
+    </p>
+  
+    <div class="buttons">
+      <button (click)="decrement()">− {{ step }}</button>
+      <button (click)="reset()">Reset</button>
+      <button (click)="increment()">+ {{ step }}</button>
+    </div>
+  </div>
+
+
+
