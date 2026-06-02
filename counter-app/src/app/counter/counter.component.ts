@@ -18,8 +18,6 @@ export class CounterComponent implements OnInit, OnDestroy {
     this.count = this.startValue;    // lifecycle hook - runs on load
     console.log('Counter initialized with:', this.count);
   }
-  
-
   ngOnDestroy() {
     console.log('Counter component destroyed'); // lifecycle hook - runs on removal
   }
@@ -34,6 +32,7 @@ export class CounterComponent implements OnInit, OnDestroy {
     this.countChanged.emit(this.count);
   }
 
+  
   reset() {
     this.count = this.startValue;
     this.countChanged.emit(this.count);
