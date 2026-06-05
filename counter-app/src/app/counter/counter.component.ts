@@ -13,7 +13,6 @@ export class CounterComponent implements OnInit, OnDestroy {
   @Output() countChanged = new EventEmitter<number>(); // data flowing OUT
 
   count: number = 0;
-
   ngOnInit() {
     this.count = this.startValue;    // lifecycle hook - runs on load
     console.log('Counter initialized with:', this.count);
